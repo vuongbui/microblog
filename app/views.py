@@ -5,6 +5,9 @@ from .forms import LoginForm, EditForm, PostForm, SearchForm
 from .models import User, Post
 from datetime import datetime
 from config import POSTS_PER_PAGE, MAX_SEARCH_RESULTS
+from whoosh.qparser import QueryParser
+from app import search_ix
+from .emails import follower_notification
 
 
 # index view function suppressed for brevity
@@ -64,6 +67,10 @@ def index(page=1):
         db.session.add(post)
         db.session.commit()
         flash('Your post is now live!')
+        writer = search_ix.writer()
+        writer.add_document(id=str(post.id), body=post.body)
+        writer.commit()
+        flash('Your post is now indexed!')
         return redirect(url_for('index'))
     posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
     return render_template('index.html',
@@ -95,30 +102,6 @@ def after_login(resp):
         session.pop('remember_me', None)
     login_user(user, remember=remember_me)
     return redirect(request.args.get('next') or url_for('index'))
-
-# @oid.after_login
-# def after_login(resp):
-#     if resp.email is None or resp.email == '':
-#         flash('Invalid login. Please try again.')
-#         return redirect(url_for('login'))
-#     user = User.query.filter_by(email=resp.email).first()
-#     if user is None:
-#         nickname = resp.nickname
-#         if nickname is None or nickname == '':
-#             nickname = resp.email.split('@')[0]
-#         nickname = User.make_unique_nickname(nickname)
-#         user = User(nickname=nickname, email=resp.email)
-#         db.session.add(user)
-#         db.session.commit()
-#         # make the user follow him/herself
-#         db.session.add(user.follow(user))
-#         db.session.commit()
-#     remember_me = False
-#     if 'remember_me' in session:
-#         remember_me = session['remember_me']
-#         session.pop('remember_me', None)
-#     login_user(user, remember=remember_me)
-#     return redirect(request.args.get('next') or url_for('index'))
 
 
 @app.route('/user/<nickname>')
@@ -175,6 +158,7 @@ def follow(nickname):
     db.session.add(u)
     db.session.commit()
     flash('You are now following ' + nickname + '!')
+    follower_notification(user, g.user)
     return redirect(url_for('user', nickname=nickname))
 
 
@@ -208,7 +192,13 @@ def search():
 @app.route('/search_results/<query>')
 @login_required
 def search_results(query):
-    results = Post.query.whoosh_search(query, MAX_SEARCH_RESULTS).all()
+    qp = QueryParser('body', schema=search_ix.schema)
+    q = qp.parse(query)
+    with search_ix.searcher() as s:
+        rs = s.search(q, limit=MAX_SEARCH_RESULTS)
+        results = []
+        for r in rs:
+            results.append(Post.query.get(int(r['id'])))
     return render_template('search_results.html',
                            query=query,
                            results=results)
