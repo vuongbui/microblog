@@ -1,0 +1,1801 @@
+2017-02-07 01:00:32,140 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 01:00:46,741 ERROR: Exception on /favicon.ico [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 124, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-07 01:00:47,523 ERROR: Exception on /favicon.ico [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 124, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-07 01:01:21,703 ERROR: Exception on /edit [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.nickname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 114, in edit
+    db.session.commit()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 874, in commit
+    self.transaction.commit()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 461, in commit
+    self._prepare_impl()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2139, in flush
+    self._flush(objects)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2259, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 187, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2223, in _flush
+    flush_context.execute()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 548, in execute
+    uow
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\persistence.py", line 737, in _emit_update_statements
+    execute(statement, multiparams)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\sql\elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1189, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1393, in _handle_dbapi_exception
+    exc_info
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.nickname [SQL: 'UPDATE user SET nickname=?, about_me=? WHERE user.id = ?'] [parameters: ('dup', '', 2)]
+2017-02-07 01:12:18,869 ERROR: Exception on /edit [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.nickname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 114, in edit
+    db.session.add(g.user)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 874, in commit
+    self.transaction.commit()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 461, in commit
+    self._prepare_impl()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2139, in flush
+    self._flush(objects)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2259, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 187, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2223, in _flush
+    flush_context.execute()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 548, in execute
+    uow
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\persistence.py", line 737, in _emit_update_statements
+    execute(statement, multiparams)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\sql\elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1189, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1393, in _handle_dbapi_exception
+    exc_info
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.nickname [SQL: 'UPDATE user SET nickname=?, about_me=? WHERE user.id = ?'] [parameters: ('dup', '', 2)]
+2017-02-07 01:12:42,452 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 01:13:02,249 ERROR: Exception on /edit [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.nickname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 115, in edit
+    db.session.commit()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 874, in commit
+    self.transaction.commit()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 461, in commit
+    self._prepare_impl()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 441, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2139, in flush
+    self._flush(objects)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2259, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 187, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\session.py", line 2223, in _flush
+    flush_context.execute()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 389, in execute
+    rec.execute(self)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 548, in execute
+    uow
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\persistence.py", line 177, in save_obj
+    mapper, table, update)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\orm\persistence.py", line 737, in _emit_update_statements
+    execute(statement, multiparams)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 945, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\sql\elements.py", line 263, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1053, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1189, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1393, in _handle_dbapi_exception
+    exc_info
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 203, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\util\compat.py", line 186, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\base.py", line 1182, in _execute_context
+    context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\sqlalchemy\engine\default.py", line 470, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.nickname [SQL: 'UPDATE user SET nickname=?, about_me=? WHERE user.id = ?'] [parameters: ('dup', '', 2)]
+2017-02-07 01:47:16,598 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 01:50:15,593 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 02:01:58,535 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 02:16:05,456 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 02:43:29,304 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 03:43:42,236 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 03:49:00,536 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 03:54:20,392 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 04:08:08,971 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 11:16:03,871 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 20:55:11,526 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:01:44,483 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:05:44,215 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:06:55,719 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:07:17,428 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:22:27,054 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:26:48,662 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:27:50,350 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:38:35,495 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:42:49,047 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:43:44,913 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-07 21:59:59,915 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 11:16:15,934 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 11:37:26,197 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 11:37:31,806 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 44, in index
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\index.html", line 5, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2017-02-08 11:37:46,822 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 44, in index
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\index.html", line 5, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2017-02-08 11:41:48,546 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 44, in index
+    title='Home',
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\index.html", line 5, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2017-02-08 11:53:48,399 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 11:55:08,661 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 11:55:23,677 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 43, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False).items
+NameError: name 'page' is not defined
+2017-02-08 11:57:13,279 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 43, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False).items
+NameError: name 'page' is not defined
+2017-02-08 11:58:26,940 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 43, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False).items
+NameError: name 'page' is not defined
+2017-02-08 11:58:30,096 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 43, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False).items
+NameError: name 'page' is not defined
+2017-02-08 12:40:50,181 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 43, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False).items
+NameError: name 'page' is not defined
+2017-02-08 12:40:56,571 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 43, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False).items
+NameError: name 'page' is not defined
+2017-02-08 12:43:28,097 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 12:45:23,929 ERROR: Exception on /favicon.ico [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 126, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 12:45:24,174 ERROR: Exception on /favicon.ico [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 126, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 12:48:41,712 ERROR: Exception on /post [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 126, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 12:50:18,700 ERROR: Exception on /user/coolguy/post [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 126, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 13:45:51,864 ERROR: Exception on /coolguy [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 126, in not_found_error
+    @app.route('/follow/<nickname>')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 13:46:01,770 ERROR: Exception on /user/coolguy/post [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 126, in not_found_error
+    @app.route('/follow/<nickname>')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 13:50:55,969 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 13:53:31,284 ERROR: Exception on /user/dup2/post [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 167, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 13:58:25,144 ERROR: Exception on /dup [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 167, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 13:58:36,832 ERROR: Exception on /user.dup [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 167, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 14:18:19,197 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 14:21:25,633 ERROR: Exception on /posts [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 167, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-08 14:42:56,825 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 14:47:58,722 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 18:36:57,123 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 18:37:11,014 ERROR: Exception on /user/dup [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 61, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 30, in top-level template code
+    {% if posts.has_next %}<a href="{{ url_for('user', nickname=user.nickname, page=posts.next_num) }}">Older posts &gt;&gt;</a>{% else %}Older posts &gt;&gt;{% endif %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\user.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2017-02-08 18:39:23,807 ERROR: Exception on /user/dup [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 61, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 30, in top-level template code
+    {% if posts.has_prev %}<a href="{{ url_for('user', nickname=user.nickname, page=posts.prev_num) }}">&lt;&lt; Newer posts</a>{% else %}&lt;&lt; Newer posts{% endif %} |
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\user.html", line 25, in block "content"
+    <!-- posts is a Paginate object -->
+TypeError: 'Pagination' object is not iterable
+2017-02-08 18:39:27,729 ERROR: Exception on /user/dup [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 61, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 30, in top-level template code
+    {% if posts.has_prev %}<a href="{{ url_for('user', nickname=user.nickname, page=posts.prev_num) }}">&lt;&lt; Newer posts</a>{% else %}&lt;&lt; Newer posts{% endif %} |
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\user.html", line 25, in block "content"
+    <!-- posts is a Paginate object -->
+TypeError: 'Pagination' object is not iterable
+2017-02-08 18:39:34,245 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 18:39:49,214 ERROR: Exception on /user/dup [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 61, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 31, in top-level template code
+    {% if posts.has_next %}<a href="{{ url_for('user', nickname=user.nickname, page=posts.next_num) }}">Older posts &gt;&gt;</a>{% else %}Older posts &gt;&gt;{% endif %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\user.html", line 26, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2017-02-08 18:39:53,589 ERROR: Exception on /user/dup [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 61, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 31, in top-level template code
+    {% if posts.has_next %}<a href="{{ url_for('user', nickname=user.nickname, page=posts.next_num) }}">Older posts &gt;&gt;</a>{% else %}Older posts &gt;&gt;{% endif %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\user.html", line 26, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2017-02-08 18:40:49,137 ERROR: Exception on /user/dup [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 61, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 31, in top-level template code
+    {% if posts.has_next %}<a href="{{ url_for('user', nickname=user.nickname, page=posts.next_num) }}">Older posts &gt;&gt;</a>{% else %}Older posts &gt;&gt;{% endif %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "C:\Users\USER\microblog\app\templates\user.html", line 26, in block "content"
+    {% for post in posts.items %}
+TypeError: 'Pagination' object is not iterable
+2017-02-08 18:40:56,527 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 18:44:39,799 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 18:51:06,181 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-08 19:17:50,751 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 00:27:37,580 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 01:06:27,102 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 01:06:43,056 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 10:38:06,741 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 10:39:11,799 ERROR: Exception on /favicon.ico [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 27, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-09 10:39:12,518 ERROR: Exception on /favicon.ico [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 27, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-09 11:14:03,351 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 11:15:22,508 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 11:18:03,029 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 11:22:01,421 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 11:25:15,094 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 11:52:33,503 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 11:54:41,328 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 12:16:49,018 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 12:16:58,487 ERROR: Exception on /user/vuongbuivan [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 111, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 14, in top-level template code
+    | <form style="display: inline;" action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20) }}<input type="submit" value="Search"></form>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'search'. Did you mean 'user' instead?
+2017-02-09 12:37:02,631 ERROR: Exception on /user/vuongbuivan [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 111, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 14, in top-level template code
+    | <form style="display: inline;" action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20) }}<input type="submit" value="Search"></form>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'search'. Did you mean 'user' instead?
+2017-02-09 12:37:11,256 ERROR: Exception on /index [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 72, in index
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\USER\microblog\app\templates\base.html", line 14, in top-level template code
+    | <form style="display: inline;" action="{{ url_for('search') }}" method="post" name="search">{{ g.search_form.hidden_tag() }}{{ g.search_form.search(size=20) }}<input type="submit" value="Search"></form>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1758, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'search'. Did you mean 'user' instead?
+2017-02-09 12:42:37,858 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 12:43:12,468 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 180, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-09 12:50:26,143 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 12:50:46,409 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 180, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-09 12:57:07,645 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 12:57:14,215 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 180, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-09 12:58:08,821 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-09 12:58:31,759 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 180, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-09 13:16:03,386 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 180, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-09 13:16:05,011 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 180, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-09 13:16:13,105 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 180, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-09 13:17:01,169 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:35]
+2017-02-10 01:44:35,400 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 02:12:04,869 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 02:18:52,117 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 02:28:27,377 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 02:31:51,323 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 02:33:32,139 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
