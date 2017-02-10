@@ -1799,3 +1799,260 @@ TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
 2017-02-10 02:28:27,377 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
 2017-02-10 02:31:51,323 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
 2017-02-10 02:33:32,139 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 09:59:55,477 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 10:17:08,583 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 10:19:02,338 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 10:25:57,123 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 10:27:03,957 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 10:39:31,997 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 10:53:59,919 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 10:58:04,673 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 11:01:28,206 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:36]
+2017-02-10 11:18:37,933 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 11:19:46,365 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 11:22:46,188 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 11:23:32,682 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 11:32:07,639 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 11:32:39,481 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 186, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-10 11:33:34,172 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 186, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-10 11:34:54,133 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 11:37:16,171 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 11:38:38,610 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 11:41:17,106 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 186, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-10 11:46:31,110 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 186, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-10 11:48:38,360 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 186, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-10 11:51:46,674 ERROR: Exception on /search [POST] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 186, in search
+    if not g.search_form.validate_on_submit():
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+2017-02-10 11:52:09,492 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 13:34:56,141 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 13:47:27,860 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 13:55:42,238 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 14:03:12,874 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 14:25:48,861 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 14:27:34,050 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:40]
+2017-02-10 14:28:42,658 ERROR: Exception on /emails [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1590, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1573, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\ctx.py", line 294, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\werkzeug\routing.py", line 1563, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1512, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1471, in handle_http_exception
+    return handler(e)
+  File "C:\Users\USER\microblog\app\views.py", line 31, in not_found_error
+    return render_template('404.html'), 404
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\404.html", line 6, in template
+    <p><a href="{{ url_for('index') }}">Back</a> </p>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '{'
+2017-02-10 15:00:18,544 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:33]
+2017-02-10 15:00:39,680 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:33]
+2017-02-10 15:02:37,693 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:33]
+2017-02-10 22:08:58,296 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:33]
+2017-02-10 22:11:29,282 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:34]
