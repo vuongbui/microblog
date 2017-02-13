@@ -7984,3 +7984,4 @@ Traceback (most recent call last):
     self.name, self.filename)
 jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'Newer'
 2017-02-14 00:26:52,159 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:39]
+2017-02-14 00:54:31,208 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:39]
