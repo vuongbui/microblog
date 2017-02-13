@@ -1,7 +1,9 @@
+# -*- coding: utf8 -*-
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 WTF_CSRF_ENABLED = True
+# SECRET_KEY = os.environ.get('SECRET_KEY','you-will-never-guess')
 SECRET_KEY = 'you-will-never-guess'
 
 SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -18,12 +20,12 @@ OPENID_PROVIDERS = [
     {'name': 'MyOpenID', 'url': 'https://www.myopenid.com'}]
 
 # mail server settings
-MAIL_SERVER = 'smtp.gmail.com'
-MAIL_PORT = 465
+MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.gmail.com')
+MAIL_PORT = int(os.environ.get('MAIL_PORT', '465'))
 MAIL_USE_TLS = False
 MAIL_USE_SSL = True
-MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+MAIL_USERNAME = os.environ.get('MAIL_USERNAME','vuongbuivan229@gmail.com')
+MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD','XXXXX')
 
 # administrator list
 ADMINS = ['vuongbuivan229@gmail.com']
@@ -32,3 +34,8 @@ ADMINS = ['vuongbuivan229@gmail.com']
 POSTS_PER_PAGE = 3
 MAX_SEARCH_RESULTS = 50
 
+# available languages
+LANGUAGES = {
+    'en': 'English',
+    'es': 'Español'
+}
