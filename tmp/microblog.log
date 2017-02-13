@@ -7475,3 +7475,168 @@ Traceback (most recent call last):
   File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
     self.name, self.filename)
 jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'Newer'
+2017-02-13 23:58:58,008 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:39]
+2017-02-13 23:59:04,571 ERROR: Exception on /user/vuongbuivan [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 134, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 647, in template
+    <span id="LC17" class="line">      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ url_for('edit') }}"</span><span class="nt">&gt;</span>{{ _('Edit your profile') }}<span class="nt">&lt;/a&gt;</span></span>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 878, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 870, in subparse
+    add_data(self.parse_tuple(with_condexpr=True))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 615, in parse_tuple
+    args.append(parse())
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 427, in parse_expression
+    return self.parse_condexpr()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 432, in parse_condexpr
+    expr1 = self.parse_or()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 445, in parse_or
+    left = self.parse_and()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 454, in parse_and
+    left = self.parse_not()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 465, in parse_not
+    return self.parse_compare()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 469, in parse_compare
+    expr = self.parse_math1()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 491, in parse_math1
+    left = self.parse_concat()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 502, in parse_concat
+    args = [self.parse_math2()]
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 512, in parse_math2
+    left = self.parse_pow()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 523, in parse_pow
+    left = self.parse_unary()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 542, in parse_unary
+    node = self.parse_postfix(node)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 671, in parse_postfix
+    node = self.parse_call(node)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 762, in parse_call
+    self.stream.expect('comma')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'edit'
+2017-02-14 00:04:32,881 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:39]
+2017-02-14 00:10:10,642 INFO: microblog startup [in C:\Users\USER\microblog\app\__init__.py:39]
+2017-02-14 00:10:35,546 ERROR: Exception on /user/vuongbuivan [GET] [in C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py:1560]
+Traceback (most recent call last):
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask_login\utils.py", line 228, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\USER\microblog\app\views.py", line 134, in user
+    posts=posts)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\flask\templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\USER\microblog\app\templates\user.html", line 17, in template
+    <a href="{{ url_for('edit') }}">{{ _('Edit your profile') }}</a>
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 896, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 878, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 870, in subparse
+    add_data(self.parse_tuple(with_condexpr=True))
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 615, in parse_tuple
+    args.append(parse())
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 427, in parse_expression
+    return self.parse_condexpr()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 432, in parse_condexpr
+    expr1 = self.parse_or()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 445, in parse_or
+    left = self.parse_and()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 454, in parse_and
+    left = self.parse_not()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 465, in parse_not
+    return self.parse_compare()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 469, in parse_compare
+    expr = self.parse_math1()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 491, in parse_math1
+    left = self.parse_concat()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 502, in parse_concat
+    args = [self.parse_math2()]
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 512, in parse_math2
+    left = self.parse_pow()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 523, in parse_pow
+    left = self.parse_unary()
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 542, in parse_unary
+    node = self.parse_postfix(node)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 671, in parse_postfix
+    node = self.parse_call(node)
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\parser.py", line 762, in parse_call
+    self.stream.expect('comma')
+  File "C:\Users\USER\microblog\flask\lib\site-packages\jinja2\lexer.py", line 373, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token ',', got 'edit'
