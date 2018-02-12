@@ -8,7 +8,6 @@ from config import basedir, ADMINS, MAIL_SERVER, MAIL_PORT, MAIL_USERNAME, MAIL_
 from whoosh.filedb.filestore import FileStorage
 from whoosh.fields import Schema, TEXT, ID
 from config import WHOOSH_BASE
-from .momentjs import momentjs
 from flask_babel import Babel
 from flask_babel import lazy_gettext
 
@@ -26,7 +25,6 @@ lm.init_app(app)
 lm.login_view = 'login'
 lm.login_message = lazy_gettext('Please log in to access this page.')
 oid = OpenID(app, os.path.join(basedir, 'tmp'))
-app.jinja_env.globals['momentjs'] = momentjs
 
 if not app.debug:
     import logging

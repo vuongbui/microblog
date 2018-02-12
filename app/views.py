@@ -7,10 +7,8 @@ from datetime import datetime
 from config import POSTS_PER_PAGE, MAX_SEARCH_RESULTS, LANGUAGES
 from whoosh.qparser import QueryParser
 from app import search_ix
-from .emails import follower_notification
 from app import babel
 from flask_babel import gettext
-from guess_language import guessLanguage
 
 
 # index view function suppressed for brevity
@@ -72,13 +70,9 @@ def login():
 def index(page=1):
     form = PostForm()
     if form.validate_on_submit():
-        language = guessLanguage(form.post.data)
-        if language == 'UNKNOWN' or len(language) > 5:
-            language = ''
         post = Post(body=form.post.data,
                     timestamp=datetime.utcnow(),
-                    author=g.user,
-                    language = language)
+                    author=g.user)
         db.session.add(post)
         db.session.commit()
         flash(gettext('Your post is now live!'))
@@ -174,7 +168,6 @@ def follow(nickname):
     db.session.add(u)
     db.session.commit()
     flash('You are now following ' + nickname + '!')
-    follower_notification(user, g.user)
     return redirect(url_for('user', nickname=nickname))
 
 
