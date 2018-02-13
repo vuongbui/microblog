@@ -4,7 +4,7 @@
 {
   branches: {
     master: true,
-    develop: {
+    version1: {
       build: true,
       notifications: {
         slack: {
