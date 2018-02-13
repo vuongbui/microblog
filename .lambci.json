@@ -4,6 +4,6 @@
 {
   build: false,
   branches: {
-    master: true
+    version1: true
   }
 }
