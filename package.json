@@ -1,0 +1,13 @@
+{
+  branches: {
+    master: true,
+    version1: {
+      build: true,
+      notifications: {
+        slack: {
+          channel: '#dev'
+        }
+      }
+    }
+  }
+}
