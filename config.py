@@ -33,9 +33,3 @@ ADMINS = ['vuongbuivan229@gmail.com']
 # pagination
 POSTS_PER_PAGE = 3
 MAX_SEARCH_RESULTS = 50
-
-# available languages
-LANGUAGES = {
-    'en': 'English',
-    'es': 'Español'
-}
