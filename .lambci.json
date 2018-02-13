@@ -1,3 +1,9 @@
 {
   "cmd": "pip install --user tox && tox"
 }
+{
+  build: false,
+  branches: {
+    version1: true
+  }
+}
